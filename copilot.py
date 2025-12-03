@@ -5,7 +5,6 @@ import json
 import os
 from pathlib import Path
 
-#updated code
 # Dataset of common git commands
 COMMAND_DATASET = [
     {"input": "commit all files with message", "output": "git commit -am", "category": "commit"},
