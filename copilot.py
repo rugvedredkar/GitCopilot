@@ -39,8 +39,7 @@ COMMAND_DATASET = [
 CONFIG_FILE = Path.home() / ".gitcopilot_config.json"
 REPOS_DIR = Path.home() / "gitcopilot_repos"
 
-def load_config():
-    
+def load_config():  
     """Load configuration from file."""
     if CONFIG_FILE.exists():
         with open(CONFIG_FILE, 'r') as f:
@@ -229,6 +228,7 @@ def run_command(cmd):
     if result.stderr:
         print(result.stderr)
     return result.returncode == 0
+
 
 def get_branch():
     """Get current git branch."""
