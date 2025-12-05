@@ -40,6 +40,7 @@ CONFIG_FILE = Path.home() / ".gitcopilot_config.json"
 REPOS_DIR = Path.home() / "gitcopilot_repos"
 
 def load_config():
+    
     """Load configuration from file."""
     if CONFIG_FILE.exists():
         with open(CONFIG_FILE, 'r') as f:
